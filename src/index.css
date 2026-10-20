@@ -1,0 +1,90 @@
+:root {
+  color-scheme: light dark;
+
+  /* 토스 느낌의 블루 그레이 팔레트 */
+  --bg: #e9f3ff;
+  --surface: #ffffff;
+  --surface-2: #f9fafb;
+  --text: #191f28;
+  --text-sub: #4e5968;
+  --text-muted: #8b95a1;
+  --border: #e5e8eb;
+  --accent: #3182f6;
+  --accent-strong: #1b64da;
+  --accent-soft: #e8f3ff;
+  --accent-text: #ffffff;
+  --danger: #f04452;
+  --danger-soft: #ffeeee;
+  --shadow: 0 2px 8px rgba(0, 27, 55, 0.06);
+
+  --prio-high-bg: #ffeeee;
+  --prio-high-fg: #d22030;
+  --prio-medium-bg: #fff4e0;
+  --prio-medium-fg: #c2600c;
+  --prio-low-bg: #e8f7f0;
+  --prio-low-fg: #0f8a4f;
+
+  --due-overdue: #f04452;
+  --due-today: #e8730b;
+
+  --font-base:
+    'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+    'Noto Sans KR', system-ui, sans-serif;
+
+  font-family: var(--font-base);
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121a27;
+    --surface: #1c2432;
+    --surface-2: #26303f;
+    --text: #e5e8eb;
+    --text-sub: #b0b8c1;
+    --text-muted: #8b95a1;
+    --border: #333d4b;
+    --accent: #4593fc;
+    --accent-strong: #3182f6;
+    --accent-soft: #1b2b45;
+    --accent-text: #ffffff;
+    --danger: #ff6b6b;
+    --danger-soft: #3a2022;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+    --prio-high-bg: #3a1f22;
+    --prio-high-fg: #ff8a8a;
+    --prio-medium-bg: #3a2f1a;
+    --prio-medium-fg: #ffc46b;
+    --prio-low-bg: #1c3324;
+    --prio-low-fg: #7ad39a;
+
+    --due-overdue: #ff6b6b;
+    --due-today: #ffb84d;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+input[type='date'],
+select {
+  font-size: 14px;
+}
